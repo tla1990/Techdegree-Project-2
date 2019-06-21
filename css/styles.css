@@ -16,43 +16,45 @@ h3 {
 }
 
 a {
-	text-decoration: none;
 	color: #000;
+	text-decoration: none;
 }
 
 .profile-img {
-  max-width: 65%;
-  margin: auto 0;
+	margin: auto 0;
+  	max-width: 65%;
 }
 
 .gallery-pic {
-  max-width: 95%;
-  margin: 0 auto;
+	margin: 0 auto;
+  	max-width: 95%;
+  
 }
 
 /*------------------- 
 BASE LAYOUT STYLES 
 --------------------*/
 li {
-	background-color: turquoise;
-	border-radius: 80px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
 ul{
 	padding-left: 0;
 }
 
+
 .main-nav li {
+	border: 2px dotted white;
 	list-style-type: none;
 	margin-top: 20px;
 	padding: 5px;
 }
 
 .wrapper {
-	text-align: center;
-	padding: 10px;
 	display: inline;
+	padding: 10px;
+	text-align: center;
 }
 
 .profile {
@@ -60,8 +62,8 @@ ul{
 }
 
 .col {
-	padding: 10px 0;
 	font-family: 'Open Sans', sans-serif;
+	padding: 10px 0;
 }
 
 .gallery {
@@ -116,6 +118,10 @@ MEDIA QUERIES
 	nav ul {
 		display: inline-block;
 		margin: 0 0 50px 0;
+	}
+
+	.main-nav li{
+		border: none;
 	}
 
 	.profile,
@@ -183,6 +189,7 @@ MEDIA QUERIES
 
 	.footer-wrap {
 		padding-bottom: 0;
+		width: 100%;
 	}
 
 	.footer-nav {
@@ -191,13 +198,13 @@ MEDIA QUERIES
    }
 
    .footer-nav ul {
-   	display: inline-block;
-   	float: right;
+   		display: inline-block;
+   		float: right;
    }
 
     .wrapper, .left {
+    	clear: both;
 		content: "";
-		clear: both;
 		display: table;
 	}
 	
@@ -223,22 +230,22 @@ MEDIA QUERIES
 		width: 60%;
 	}
 
-
+	.left {
+		clear: none;
+	}
 	.col {
-		width: 30%;
+		height: 400px;
+		width: 33.333%;
 	}
 
 	.travel,
-	.cal, {
-		float: right;
-		clear: both;
+	.market,
+	.cal,
+	.map,
+	.search {
+		float: left;
 	}
 
-	.market,
-	.map {
-		float: left;
-		clear: both;
-	}
 	.contact p {
 		font-size: 1.25em;
 
@@ -247,7 +254,6 @@ MEDIA QUERIES
 	.contact {
 		width: 65%;
 	}
-
 
 }
 	
