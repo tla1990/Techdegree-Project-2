@@ -34,9 +34,10 @@ a {
 BASE LAYOUT STYLES 
 --------------------*/
 li {
-	font-weight: bold;
 	background-color: turquoise;
 	border-radius: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 ul{
 	padding-left: 0;
@@ -90,89 +91,168 @@ h5 {
 }
 
 .back-to-top {
-	font-weight: bold;
 	float: right;
+	font-weight: bold;
 }
 
 /*-------------- 
 MEDIA QUERIES
 --------------*/
 @media (min-width: 768px) {
-	h1 {
+
+
+	header h1 {
 		margin-bottom: 0;
 	}
-	.main-nav ul{
-		display: inline;
-	}
 
-	li {
-		display: inline-block;
+	nav li {
 		background: none;
-		margin: 0;
+		display: inline-block;
+		margin: 0 20px;
+		padding-left: 30px;
+
 	}
 
-	.col{
-		width: 50%;
+	nav ul {
+		display: inline-block;
+		margin: 0 0 50px 0;
 	}
 
-	.marketing
-	.travel
-	.photo {
-		float: left;
-	}
-
-	.search
-	.map
-	.calculator {
-		float: right;
-	}	
-
-	.profile-img {
-		width: 20%;
-		float: right;
+	.profile,
+	.portfolio,
+	.contact,
+	.col p, 
+	.footer-nav ul {
+		margin: 0 auto;
 	}
 
 	.profile {
-		margin: auto 0;
+		margin-bottom: 40px;
+		width: 100%;
 	}
 
-	.profile p{
-		width: 20%;
+	.profile-img {
+		float: right;
+		width: 300px;
+	}
+
+	.info {
 		float: left;
+		font-size: 1.20em;	
+		line-height: 1.25;
+		text-align: left;
+		width: 400px;
 	}
 
-	.gallery-pic {
-		width: 35%;
-	}
- 
-	 .footer-nav {
-		margin: 10px;
-		float: right
+	.col p {
+		text-align: center;
+		width: 80%;
 	}
 
-	.footer-nav li {
-		list-style-type: none;
-		display: inline-block;
+	.left {
+		float: left;
+		width: 50%;
 	}
+
+	.right {
+		float: right;
+		width: 50%;
+	}
+
+	 .portfolio {
+	 	border: 2px dotted white;
+	 	margin-bottom: 20px;
+	 	padding-bottom: 50px;
+  	}
+
+  	.contact {
+  		margin-bottom: 50px;
+  	}
+
+  	.contact p {
+  		font-size: 1.20em;
+  	}
+
+  	.contact-info{
+  		line-height: 1.5em;
+  	}
 
 	.back-to-top {
 		display: none;
 	}
 
-	.wrapper :after {
-		content:"";
-		display: table;
-		clear: both;
+	.footer-wrap {
+		padding-bottom: 0;
 	}
+
+	.footer-nav {
+    	display: inline-block;
+    	float: right;
+   }
+
+   .footer-nav ul {
+   	display: inline-block;
+   	float: right;
+   }
+
+    .wrapper, .left {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
 }
 
 @media (min-width: 1024px) {
 
-.footer-nav {
-	margin: 10px;
-	float: right
-}
+	header h1 {
+		float: left;
+	}
 
-.footer-nav li {
-	list-style-type: none;
+	nav ul {
+		float: right;
+	}
+
+	.profile-img {
+		width: 35%;
+	}
+
+	.info {
+		font-size: 1.75em;
+		padding-right: 10px;
+		width: 60%;
+	}
+
+
+	.col {
+		width: 30%;
+	}
+
+	.travel,
+	.cal, {
+		float: right;
+		clear: both;
+	}
+
+	.market,
+	.map {
+		float: left;
+		clear: both;
+	}
+	.contact p {
+		font-size: 1.25em;
+
+	}
+
+	.contact {
+		width: 65%;
+	}
+
+
 }
+	
+
+
+
+
+
