@@ -8,7 +8,7 @@ BASE ELEMENT STYLES
 
 body {
 	background-color: silver;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Montserrat',sans-serif; 
 }
 
 h3 {
@@ -20,9 +20,15 @@ a {
 	text-decoration: none;
 }
 
-.profile-img {
-	margin: auto 0;
-  	max-width: 65%;
+.profile-img,
+.info {
+	display: block;
+	margin: auto ;
+  	width: 65%;
+}
+
+.info {
+	padding-top: 20px;
 }
 
 .gallery-pic {
@@ -46,6 +52,7 @@ ul{
 
 .main-nav li {
 	border: 2px dotted white;
+	display: block;
 	list-style-type: none;
 	margin-top: 20px;
 	padding: 5px;
@@ -62,10 +69,13 @@ ul{
 }
 
 .col {
-	font-family: 'Open Sans', sans-serif;
 	padding: 10px 0;
 }
 
+.col p {
+	margin: 0 auto;
+	width: 50%;
+}
 .gallery {
 	margin: 0 auto;
 }
@@ -79,8 +89,9 @@ ul{
 }
 
 /*----footer----*/
+
 .footer-wrap {
-	padding: 20px 0;
+	margin: 10px 0 20px 0;
 }
 
 .footer-nav {
@@ -107,21 +118,13 @@ MEDIA QUERIES
 		margin-bottom: 0;
 	}
 
-	nav li {
-		background: none;
+	.main-nav  {
 		display: inline-block;
-		margin: 0 20px;
-		padding-left: 30px;
-
 	}
 
-	nav ul {
+	.main-nav li {
 		display: inline-block;
-		margin: 0 0 50px 0;
-	}
-
-	.main-nav li{
-		border: none;
+		margin: 0 0 20px 20px;
 	}
 
 	.profile,
@@ -188,18 +191,17 @@ MEDIA QUERIES
 	}
 
 	.footer-wrap {
-		padding-bottom: 0;
 		width: 100%;
 	}
 
 	.footer-nav {
-    	display: inline-block;
+		display: inline;
     	float: right;
    }
 
-   .footer-nav ul {
+   .footer-nav li {
    		display: inline-block;
-   		float: right;
+   		padding-right: 20px;
    }
 
     .wrapper, .left {
@@ -216,8 +218,9 @@ MEDIA QUERIES
 		float: left;
 	}
 
-	nav ul {
+	.main-nav {
 		float: right;
+		display: inline-block;
 	}
 
 	.profile-img {
